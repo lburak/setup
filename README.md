@@ -12,6 +12,9 @@ A repository to hold basic configuration files, and a list of useful programs I 
 # Programs
 
 ## General
+vim
+  sudo apt install vim
+
 sublimetext
 
 Chrome
@@ -23,5 +26,8 @@ get-pip.py
 
 ## Linux
 Cinnamon
+  sudo add-apt-repository ppa:embrosyn/cinnamon
+  sudo apt update
+  sudo apt install cinnamon
 
 
