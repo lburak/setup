@@ -4,17 +4,21 @@ A repository to hold basic configuration files, and a list of useful programs I 
 
 # Config
 .screenrc
+
 .bashrc
+
 .vimrc
 
 # Programs
 
 ## General
 sublimetext
+
 Chrome
 
 ## Python
 virtualenvwrapper
+
 get-pip.py
 
 
