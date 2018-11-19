@@ -121,3 +121,17 @@ export PROJECT_HOME=$HOME/projects
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 
+# Support for bash
+PROMPT_COMMAND='prompt'
+
+# Anytime you enter a direction check for a virtual environvment,
+# if it exists activate that virtual environment
+# credit: https://justin.abrah.ms/dotfiles/zsh.html#sec-2-7
+function prompt()
+{
+    if [ "$PWD" != "$MYOLDPWD" ]; then
+        MYOLDPWD="$PWD"
+        test -e .venv && workon `cat .venv`
+    fi
+}
+
