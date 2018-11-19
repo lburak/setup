@@ -21,4 +21,7 @@ virtualenvwrapper
 
 get-pip.py
 
+## Linux
+Cinnamon
+
 
