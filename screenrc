@@ -1,7 +1,9 @@
 # https://bbs.archlinux.org/viewtopic.php?id=55618&p=2
 # the following two lines give a two-line status, with the current window highlighted
+backtick 2 60 60 $HOME/bin/get_freemem
+backtick 2 60 60 $HOME/bin/get_freeswap
 hardstatus alwayslastline
-hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]'
+hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%2` %3`][%{B}%m/%d %{W}%C%A%{g}]'
 
 # set escape to `
 escape ``
@@ -10,7 +12,7 @@ escape ``
 altscreen on
 
 # huge scrollback buffer
-defscrollback 50000
+defscrollback 100000
 
 # no welcome message
 startup_message off
@@ -81,3 +83,6 @@ bind -c rsz -k kl eval "focus left"  "command -c rsz" # Left
 bind -c rsz -k kr eval "focus right" "command -c rsz" # Right
 bind -c rsz -k ku eval "focus up"    "command -c rsz" # Up
 bind -c rsz -k kd eval "focus down"  "command -c rsz" # Down
+
+# enable mouse scrollback
+termcapinfo xterm* ti@:te@
