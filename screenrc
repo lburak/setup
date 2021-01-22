@@ -1,7 +1,7 @@
 # https://bbs.archlinux.org/viewtopic.php?id=55618&p=2
 # the following two lines give a two-line status, with the current window highlighted
 backtick 2 60 60 $HOME/bin/get_freemem
-backtick 2 60 60 $HOME/bin/get_freeswap
+backtick 3 60 60 $HOME/bin/get_freeswap
 hardstatus alwayslastline
 hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%2` %3`][%{B}%m/%d %{W}%C%A%{g}]'
 
